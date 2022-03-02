@@ -4,6 +4,7 @@ from assets import functions as func
 import traceback
 import asyncio
 from SpamFilter import AntiSpam
+from config import POINTS_TO_BE_GIVEN_PER_MESSAGE
 
 class PointsSystem(commands.Cog):
     def __init__(self,bot):
@@ -11,17 +12,12 @@ class PointsSystem(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self,msg):
-        POINTS_TO_BE_GIVEN_PER_MESSAGE = 2
         # Feel free to change the number above.
         if msg.author.bot or not msg.guild:
             return
         try:
-            antispam = await AntiSpam(dictionary=True).check(self.bot, msg.channel, msg.author)
-            if antispam:
-                await msg.channel.send("Spam")
+            if await AntiSpam(dictionary=True).check(self.bot, msg.channel, msg.author):
                 return
-            else:
-                await msg.channel.send("Not spam.")
 
             datas = await func.DataFetch(self.bot, 'all', 'points', msg.guild.id)
             if len(datas) != 0:
