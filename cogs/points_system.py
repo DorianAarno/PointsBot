@@ -12,7 +12,6 @@ class PointsSystem(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self,msg):
-        # Feel free to change the number above.
         if msg.author.bot or not msg.guild:
             return
         try:
