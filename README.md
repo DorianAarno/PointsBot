@@ -22,6 +22,11 @@
 ## ❓ How to use it?
 In [config.py](https://github.com/DorianAarno/PointsBot/blob/main/config.py) replace `TOKEN` with your application's token. 
 **That's it, you're ready to use the bot, you may edit other parameters in config file as per your needs.**
+
+## 📘 Other libraries used
+* [disnake-pagination](https://github.com/DorianAarno/Paginator) 
+* [discordpy-antispam](https://github.com/DorianAarno/SpamFilter)
+
  
 ## 📖 License
 Released under the [Apache License 2.0](https://github.com/DorianAarno/PointsBot/blob/main/LICENSE) license.
