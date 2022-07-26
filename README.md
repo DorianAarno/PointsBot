@@ -24,8 +24,10 @@ In [config.py](https://github.com/DorianAarno/PointsBot/blob/main/config.py) rep
 **That's it, you're ready to use the bot, you may edit other parameters in config file as per your needs.**
 
 ## 📘 Other libraries used
-* [disnake-pagination](https://github.com/DorianAarno/Paginator) [Leaderboard line 67](https://github.com/DorianAarno/PointsBot/blob/main/cogs/points_commands.py)
-* [discordpy-antispam](https://github.com/DorianAarno/SpamFilter) [on_message event line 14](https://github.com/DorianAarno/PointsBot/blob/main/cogs/points_system.py)
+* [disnake-pagination](https://github.com/DorianAarno/Paginator) 
+   * [Leaderboard line 67](https://github.com/DorianAarno/PointsBot/blob/main/cogs/points_commands.py)
+* [discordpy-antispam](https://github.com/DorianAarno/SpamFilter) 
+   * [on_message event line 14](https://github.com/DorianAarno/PointsBot/blob/main/cogs/points_system.py)
 
  
 ## 📖 License
